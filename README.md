@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🚀 AI Vibe Growth — Marketing Intelligence Dashboard
 
-## Getting Started
+Frontend Assignment Solution (Next.js + TypeScript + Tailwind CSS)
 
-First, run the development server:
+📌 Overview
 
-```bash
+This project implements a Marketing Intelligence Dashboard along with a Prompt Playground simulation tab.
+The aim is to demonstrate the ability to build modern, data-driven UIs using React/Next.js, manage state efficiently, work with mock data, and simulate prompt-driven interactions through lightweight intent parsing.
+
+The solution includes:
+
+A responsive dashboard for viewing campaign analytics
+
+A prompt-based command interface for filtering and highlighting campaign insights
+
+Basic SEO setup (meta tags, OpenGraph/Twitter card)
+
+Clean, accessible UI built with Tailwind CSS
+
+Static mock JSON for campaign data
+
+Automatic redirect from / → /dashboard for improved UX
+
+🛠️ Tech Stack
+
+Next.js (App Router) — Framework
+
+TypeScript — Type-safe components and data
+
+Tailwind CSS — Utility-first styling
+
+Recharts — Small performance chart
+
+Local state & simple logic — Filters + Prompt intent parsing
+
+✔️ Features Implemented
+1. Marketing Dashboard
+
+Displays mock ad campaign data (static JSON)
+
+Each campaign includes:
+
+Name
+
+Impressions, Clicks, CTR, Conversions
+
+Status (Active / Paused)
+
+Performance chart built using Recharts
+
+Basic filters:
+
+Filter by status
+
+Filter by date range
+
+Fully responsive layout (mobile → desktop)
+
+Clean semantic structure with headings and labeled UI elements
+
+2. Prompt Playground (AI Simulation Tab)
+
+Input box for user prompts
+
+Lightweight keyword-based intent parser
+
+Supported commands (examples):
+
+“Show top campaigns by CTR”
+
+“Highlight best performing campaign”
+
+“List paused campaigns”
+
+Dynamic UI updates based on interpreted intent (no real NLP/AI required)
+
+3. SEO Setup
+
+Basic SEO improvements:
+
+Title + description meta tags
+
+OpenGraph + Twitter Card tags
+
+Semantic HTML structure
+
+Homepage auto-redirects to /dashboard for cleaner entry point
+
+⚠️ Note: SEO is not dynamic due to time limitations, but a functional baseline is implemented.
+
+📁 Project Structure
+project/
+│── app/
+│   ├── dashboard/
+│   ├── playground/
+│   ├── layout.tsx
+│   ├── page.tsx (redirect)
+│── components/
+│── data/
+│── hooks/
+│── utils/
+│── public/
+│── styles/
+
+🚀 Getting Started
+1. Clone the repo
+[git clone https://github.com/your-username/ai-vibe-growth.git](https://github.com/Kirito1610/Venture.git)
+cd my-app
+
+2. Install dependencies
+npm install
+
+3. Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open in browser
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🧱 Architecture Summary
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Next.js App Router used for routing and layouts
 
-## Learn More
+Campaign data resides as static JSON (mock backend)
 
-To learn more about Next.js, take a look at the following resources:
+State logic handled locally inside components for simplicity
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Filters implemented using pure functions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Prompt interpreter uses keyword matching + mapping rules
 
-## Deploy on Vercel
+Recharts provides visual insight into one campaign's trend
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Tailwind CSS ensures a responsive and accessible UI
