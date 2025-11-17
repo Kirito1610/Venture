@@ -26,7 +26,7 @@ function DashboardWrapper() {
       };
     });
   return (
-    <div className="flex max-sm:px-5 sm:p-10 w-full overflow-hidden py-20 bg-[#FFFCFB] flex-col">
+    <div className="flex max-sm:px-5 sm:p-10 w-full overflow-hidden py-24 bg-[#FFFCFB] flex-col">
       <p className=" text-xl font-medium pb-4">DashBoard</p>
       <div className=" flex max-sm:flex-col gap-3">
         <div className=" w-full sm:w-1/2 flex items-start flex-col gap-10">
@@ -52,3 +52,4 @@ function DashboardWrapper() {
 }
 
 export default DashboardWrapper;
+
